@@ -43,7 +43,6 @@ const Section = styled.section`
     img {
       flex-shrink: 0; /* fill & center  */
       min-height: 100%; /* fill & center  */
-      min-height: 100%; /* fill & center  */
       border-radius: 2rem;
       filter: brightness(60%);
       transition: 0.8s ease-in-out;
@@ -84,6 +83,12 @@ const Section = styled.section`
   }
   @media screen and (min-width: 260px) and (max-width: 1080px) {
     /* display: none; */
+
+    img {
+      width: 1200px !important;
+      height: 300px !important;
+    }
+
     .content {
       h1 {
         width: 90%;
@@ -101,6 +106,7 @@ const Section = styled.section`
   }
   @media screen and (min-width: 1500px) and (max-width: 3296px) {
     /* display: none; */
+
     .content {
       left: 30%;
       h1 {
