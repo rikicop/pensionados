@@ -10,12 +10,12 @@ export default function Portfolio() {
         <Image src={background} alt="" />
       </div>
       <div className="content">
-        <h1>Buy Premium Pan Free Hand Toast!</h1>
+        <h1>Ecos Del Pensionado</h1>
         <h2>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
-          molestias!
+          Periódico que permite de forma sencilla y rápida acceder a la
+          información y expresar sus opiniones.
         </h2>
-        <button>Buy Now</button>
+        {/* <button>Buy Now</button> */}
       </div>
     </Section>
   );

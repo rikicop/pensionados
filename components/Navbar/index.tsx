@@ -1,18 +1,22 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import logo from "../../assets/food.png";
+import logo from "../../assets/ecos.png";
 import { BsToggleOn, BsToggleOff } from "react-icons/bs";
 import { Link as LinkScroll } from "react-scroll";
 
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 12rem;
   .brand {
     display: flex;
     align-items: center;
     .logo {
+      display: flex;
+      h2 {
+        margin-left: 1rem;
+      }
       img {
         height: 5vh;
       }
@@ -140,9 +144,10 @@ const Navbar = () => {
             src={logo}
             alt="Brand Logo"
             className="brandLogo"
-            height={80}
-            width={350}
+            height={20}
+            width={30}
           />
+          <h2 style={{ color: "var(--primary-color)" }}>ECDP</h2>
         </div>
         <div className="toggle">
           {navState ? (
@@ -176,10 +181,10 @@ const Navbar = () => {
               duration={100}
               style={{ cursor: "pointer" }}
             >
-              Blog
+              Noticias
             </LinkScroll>
           </li>
-          <li>
+          {/*    <li>
             <LinkScroll
               to="portfolio"
               smooth={true}
@@ -188,7 +193,7 @@ const Navbar = () => {
             >
               Portfolio
             </LinkScroll>
-          </li>
+          </li> */}
           <li>
             <LinkScroll
               to="footr"

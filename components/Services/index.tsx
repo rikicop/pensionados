@@ -1,23 +1,24 @@
-import Image from "next/image";
+//import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import Services1 from "../../assets/Services1.png";
-import Services2 from "../../assets/Services2.png";
-import Services3 from "../../assets/Services3.png";
+//import Services1 from "../../assets/Services1.png";
+//import Services2 from "../../assets/Services2.png";
+//import Services3 from "../../assets/Services3.png";
 import { TitleStyles } from "../ReusableStyles";
 
 const Services = () => {
   return (
     <Section id="services">
       <div className="title">
-        <h1 className="yellow">What we do?</h1>
+        <h1>Misión</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
-          incidunt magnam labore ipsam vero minima maxime doloribus dolores ipsa
-          soluta.
+          En estos tiempos de crisis y de incertidumbre es necesaria una
+          estrategia de integración que permita a toda la comunidad y en
+          especial a los pensionados estar contacto constante de través de
+          utilización del Periódico virtual.
         </p>
       </div>
-      <div className="services">
+      {/*   <div className="services">
         <div className="service">
           <Image src={Services2} alt="" />
           <p>
@@ -42,7 +43,7 @@ const Services = () => {
           </p>
           <button>Read More</button>
         </div>
-      </div>
+      </div> */}
     </Section>
   );
 };

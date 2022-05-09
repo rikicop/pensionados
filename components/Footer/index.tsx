@@ -1,26 +1,26 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "assets/logo.png";
+//import logo from "assets/logo.png";
 //import Button from "../Button";
-import Image from "next/image";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+//import Image from "next/image";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   const links = [
     {
       title: "Contacto",
-      links: ["+57 311 5097934", "megapixels@gmail.com", `Sector San Eduardo`],
+      links: ["+300 2187165", "profedario29@hotmail.com", `Sector San Eduardo`],
     },
   ];
   return (
     <Footr id="footr">
       <div className="upper__footer">
         <div className="brand">
-          <Image src={logo} alt="Footer Logo" />
+          {/* <Image src={logo} alt="Footer Logo" /> */}
+          <h1>Ecos Del Pensionado</h1>
           <p>
-            From Tron to Narnya, the idea to suddenly be transferred in another
-            world, where you could move, feel, interact and communicate is a
-            recurring theme in books, animes and movies.
+            Periódico que permite de forma sencilla y rápida acceder a la
+            información y expresar sus opiniones.
           </p>
         </div>
         {links.map(({ title, links }) => {
@@ -37,17 +37,27 @@ export default function Footer() {
         })}
       </div>
       <div className="lower__footer">
-        <span>&copy; 2022 Earthium</span>
+        <span>&copy; 2022 ECDP</span>
         <ul>
-          <li>
+          <li
+            onClick={() =>
+              (window.location.href =
+                "https://www.facebook.com/josedario.bernalleal")
+            }
+          >
             <FaFacebook style={{ marginRight: "10px" }} />
             Facebook
           </li>
-          <li>
+          {/*  <li>
             <FaTwitter style={{ marginRight: "10px" }} />
             Twitter
-          </li>
-          <li>
+          </li> */}
+          <li
+            onClick={() =>
+              (window.location.href =
+                "https://www.instagram.com/josedariobernalleal/")
+            }
+          >
             <FaInstagram style={{ marginRight: "10px" }} /> Instagram
           </li>
         </ul>

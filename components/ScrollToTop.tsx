@@ -4,8 +4,8 @@ import { AiOutlineWhatsApp } from "react-icons/ai";
 export default function () {
   return (
     <Div>
-      <a href="https://wa.me/573115097934">
-        <AiOutlineWhatsApp color="green" size={40} />
+      <a href="https://wa.me/3002187165">
+        <AiOutlineWhatsApp color="green" size={30} />
       </a>
     </Div>
   );

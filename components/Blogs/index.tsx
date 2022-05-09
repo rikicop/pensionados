@@ -1,37 +1,37 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import blog1 from "../../assets/blog1.png";
-import blog2 from "../../assets/blog2.png";
-import blog3 from "../../assets/blog3.png";
+import blog1 from "../../assets/noti1.jpeg";
+import blog2 from "../../assets/noti2.jpeg";
+import blog3 from "../../assets/noti3.jpeg";
 
 const Blogs = () => {
   const images = [
     {
       picture: blog1,
-      title: "Pancartas Personalizadas",
+      title: "Casa en Barranquilla?",
       description:
-        "Las pancartas de vinilo son un medio útil y efectivo que sirve para diversos propósitos personales y de marketing. ",
+        "Pensionados que compren casa en Barranquilla aplican a exención del predial. Los beneficiarios pueden ahorrarse más de 42 millones de pesos, según cifras oficiales del Distrito. ",
     },
     {
       picture: blog2,
-      title: "Pancartas Comerciales",
+      title: "Tarifas en servicios de salud.",
       description:
-        "Instalar una pancarta de vinilo en las exposiciones significa que se beneficiará enormemente de sus características y ventajas.",
+        "Las nuevas tarifas de los servicios de salud para pensionados. La medida fue tomada por el Gobierno Nacional para ayudar los beneficiarios con menos ingresos.",
     },
     {
       picture: blog3,
-      title: "Pancartas Informativas",
+      title: "Consultar fondo de pensiones",
       description:
-        "¿Estás lanzando tu marca o actualizando tus servicios? Obtenga pancartas de apertura para que las personas estén alertas a  cambios futuros.",
+        "Así puede consultar su fondo de pensiones y las semanas que tiene cotizadas .Los fondos de pensiones tienen portales web para que los afiliados consulten su historial laboral.",
     },
   ];
 
   return (
     <Section id="blogs">
       <div className="title">
-        <h2>Servicios!</h2>
-        <h5>Donde te puedes promocionar!</h5>
+        <h2>Noticias</h2>
+        {/* <h5>Donde te puedes promocionar!</h5> */}
       </div>
       <div className="blogs">
         {images.map(({ picture, title, description }) => {

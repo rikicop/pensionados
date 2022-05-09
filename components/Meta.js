@@ -13,9 +13,9 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "MegaPixeles",
-  keywords: "avisos, pendones,pancartas",
-  description: "Los mejores avisos, pendones y pancartas",
+  title: "ECDP",
+  keywords: "pension, pension plan, pension plan calculador",
+  description: "Periódico de noticias sobre pensiones",
 };
 
 export default Meta;

@@ -9,16 +9,15 @@ const Hero = () => {
     <Section id="hero">
       <div className="text">
         <h1>
-          <span className="highlight">TropiBurguer </span>las mejores
-          hamburgesas de Cúcuta.
+          <span className="highlight">ECOS </span> del pensionado.
         </h1>
-        <p>Comida rápida</p>
+        <p>Periódico Virtual</p>
         <div className="button-wrapper">
           <a
             href="https://wa.me/573115097934"
             style={{ textDecoration: "none" }}
           >
-            <Button text="Ordena Ahora" icon={<RiWhatsappFill />} />
+            <Button text="Contacto" icon={<RiWhatsappFill />} />
           </a>
         </div>
       </div>
@@ -39,7 +38,7 @@ const Section = styled.section`
   height: 100vh;
   align-items: center;
   .text {
-    color: black;
+    color: whitesmoke;
     padding-left: 10rem;
     display: flex;
     flex-direction: column;
@@ -47,13 +46,14 @@ const Section = styled.section`
     gap: 1rem;
     font-weight: 500;
     .highlight {
-      color: #f3fb04;
+      color: #29e97a;
     }
     h1 {
       font-size: 4.8vw;
     }
     p {
       font-size: 1.5vw;
+      font-weight: bolder;
     }
     .button-wrapper {
       margin-bottom: 15px;
